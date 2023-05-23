@@ -11,13 +11,23 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: DefaultTabController(
         length: 2,
         child: Scaffold(
           appBar: AppBar(
-            title: const Text('Shyp Platform'),
-            bottom: const TabBar(
-              tabs: [
+            backgroundColor: Colors.grey[50],
+            title: Text(
+              'My Loads',
+              style: TextStyle(color: Colors.grey[800]),
+            ),
+            bottom: TabBar(
+              indicatorWeight: 4.0,
+              indicatorColor: Colors.red,
+              labelColor: Colors.red,
+              unselectedLabelColor: Colors.grey[800],
+              labelStyle: const TextStyle(fontWeight: FontWeight.bold),
+              tabs: const [
                 Tab(text: 'Ongoing'),
                 Tab(text: 'Past'),
               ],
@@ -25,8 +35,8 @@ class MainApp extends StatelessWidget {
           ),
           body: const TabBarView(
             children: [
-              OrdersScreen(ongoing: true),
-              OrdersScreen(ongoing: false),
+              OrdersScreen(fullfilled: true),
+              OrdersScreen(fullfilled: false),
             ],
           ),
         ),

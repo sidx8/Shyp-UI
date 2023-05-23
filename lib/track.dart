@@ -151,13 +151,42 @@ class TrackLoadScreen extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.all(15.0),
+            child: Container(
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              width: double.infinity,
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Per Tonne Freight Price',
+                      style: TextStyle(
+                          fontWeight: FontWeight.w600,
+                          color: Colors.grey[800],
+                          fontSize: 16),
+                    ),
+                    Text(
+                      '₹ 3000',
+                      style: TextStyle(
+                          fontWeight: FontWeight.w600,
+                          color: Colors.grey[800],
+                          fontSize: 20),
+                    ),
+                  ]),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(15.0),
             child: SizedBox(
               width: double.infinity,
               height: 50,
               child: ElevatedButton(
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all<Color?>(
-                    Colors.blueGrey[700],
+                    Colors.green,
                   ),
                 ),
                 child: const Text('Confirm Booking'),
@@ -176,11 +205,25 @@ class TrackLoadScreen extends StatelessWidget {
               ),
             ),
           ),
-          ElevatedButton(
-            child: const Text('Cancel Booking'),
-            onPressed: () {
-              Navigator.pop(context);
-            },
+          Padding(
+            padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
+            child: SizedBox(
+              width: double.infinity,
+              height: 50,
+              child: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  backgroundColor: Colors.transparent,
+                  side: const BorderSide(color: Colors.red, width: 2),
+                ),
+                child: const Text(
+                  'Cancel ',
+                  style: TextStyle(color: Colors.red),
+                ),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+              ),
+            ),
           ),
         ],
       ),

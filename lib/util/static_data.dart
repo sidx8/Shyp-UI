@@ -1,0 +1,113 @@
+enum OrderStatus {
+  inprogress,
+  fulfilled,
+  pending,
+}
+
+final List<Map<String, dynamic>> orders = [
+  {
+    'id': 'order1',
+    'title': 'Order 1',
+    'status': OrderStatus.inprogress,
+    'pickupLocation': 'New York',
+    'dropLocation': 'Los Angeles',
+    'quantityOfLoad': '10 tons',
+    'pickupDate': DateTime(2023, 6, 1).toIso8601String(),
+    'trucks': [
+      {'id': 'truck1', 'license': 'ABC-123'},
+      {'id': 'truck2', 'license': 'DEF-456'},
+    ],
+  },
+  {
+    'id': 'order2',
+    'title': 'Order 2',
+    'status': OrderStatus.fulfilled,
+    'pickupLocation': 'Denver',
+    'dropLocation': 'Phoenix',
+    'quantityOfLoad': '12 tons',
+    'pickupDate': DateTime(2023, 6, 15).toIso8601String(),
+    'trucks': [],
+  },
+  {
+    'id': 'order4',
+    'title': 'Order 4',
+    'status': OrderStatus.inprogress,
+    'pickupLocation': 'Denver',
+    'dropLocation': 'Phoenix',
+    'quantityOfLoad': '12 tons',
+    'pickupDate': DateTime(2023, 6, 15).toIso8601String(),
+    'trucks': [],
+  },
+  {
+    'id': 'order5',
+    'title': 'Order 5',
+    'status': OrderStatus.pending,
+    'pickupLocation': 'Chicago',
+    'dropLocation': 'Houston',
+    'quantityOfLoad': '15 tons',
+    'pickupDate': DateTime(2023, 6, 5).toIso8601String(),
+    'trucks': [
+      {'id': 'truck3', 'license': 'GHI-789'},
+    ],
+  },
+  {
+    'id': 'order6',
+    'title': 'Order 6',
+    'status': OrderStatus.pending,
+    'pickupLocation': 'Chicago',
+    'dropLocation': 'Houston',
+    'quantityOfLoad': '15 tons',
+    'pickupDate': DateTime(2023, 6, 5).toIso8601String(),
+    'trucks': [
+      {'id': 'truck3', 'license': 'GHI-789'},
+    ],
+  },
+  {
+    'id': 'order7',
+    'title': 'Order 7',
+    'status': OrderStatus.pending,
+    'pickupLocation': 'Chicago',
+    'dropLocation': 'Houston',
+    'quantityOfLoad': '15 tons',
+    'pickupDate': DateTime(2023, 6, 5).toIso8601String(),
+    'trucks': [
+      {'id': 'truck3', 'license': 'GHI-789'},
+    ],
+  },
+  {
+    'id': 'order8',
+    'title': 'Order 8',
+    'status': OrderStatus.pending,
+    'pickupLocation': 'Chicago',
+    'dropLocation': 'Houston',
+    'quantityOfLoad': '15 tons',
+    'pickupDate': DateTime(2023, 6, 5).toIso8601String(),
+    'trucks': [
+      {'id': 'truck3', 'license': 'GHI-789'},
+    ],
+  },
+  {
+    'id': 'order9',
+    'title': 'Order 9',
+    'status': OrderStatus.pending,
+    'pickupLocation': 'Chicago',
+    'dropLocation': 'Houston',
+    'quantityOfLoad': '15 tons',
+    'pickupDate': DateTime(2023, 6, 5).toIso8601String(),
+    'trucks': [
+      {'id': 'truck3', 'license': 'GHI-789'},
+    ],
+  },
+  {
+    'id': 'order10',
+    'title': 'Order 10',
+    'status': OrderStatus.inprogress,
+    'pickupLocation': 'Chicago',
+    'dropLocation': 'Houston',
+    'quantityOfLoad': '15 tons',
+    'pickupDate': DateTime(2023, 6, 5).toIso8601String(),
+    'trucks': [
+      {'id': 'truck3', 'license': 'GHI-789'},
+    ],
+  },
+];

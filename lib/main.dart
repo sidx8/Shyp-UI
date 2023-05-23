@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shyp_ui/orders.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,10 +10,25 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
+    return MaterialApp(
+      home: DefaultTabController(
+        length: 2,
+        child: Scaffold(
+          appBar: AppBar(
+            title: const Text('Shyp Platform'),
+            bottom: const TabBar(
+              tabs: [
+                Tab(text: 'Ongoing'),
+                Tab(text: 'Past'),
+              ],
+            ),
+          ),
+          body: const TabBarView(
+            children: [
+              OrdersScreen(ongoing: true),
+              OrdersScreen(ongoing: false),
+            ],
+          ),
         ),
       ),
     );

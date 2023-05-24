@@ -5,7 +5,8 @@ class CustomStepper extends StatelessWidget {
   final Color activeColor;
   final Color inactiveColor;
 
-  CustomStepper({
+  const CustomStepper({
+    super.key,
     required this.currentStep,
     this.activeColor = Colors.blue,
     this.inactiveColor = Colors.grey,

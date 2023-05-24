@@ -169,7 +169,7 @@ class TrackLoadScreen extends StatelessWidget {
                             color: Colors.grey[800],
                             fontWeight: FontWeight.w600)),
                     const SizedBox(height: 10),
-                    CustomStepper(
+                    const CustomStepper(
                       currentStep: 2,
                       activeColor: Colors.green,
                       inactiveColor: Colors.red,

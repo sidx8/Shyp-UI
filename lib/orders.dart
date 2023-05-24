@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shyp_ui/components/bottomnavbar.dart';
 import 'package:shyp_ui/track.dart';
 import 'package:shyp_ui/util/static_data.dart';
 
@@ -232,25 +233,7 @@ class _OrdersScreenState extends State<OrdersScreen> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.airport_shuttle),
-            label: 'My Loads',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Account',
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.redAccent,
-        onTap: onItemTapped,
-      ),
+      bottomNavigationBar: bottomnavbar(context, _selectedIndex, onItemTapped),
     );
   }
 }

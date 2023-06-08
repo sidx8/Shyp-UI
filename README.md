@@ -9,6 +9,7 @@ This Flutter project is a simple UI for the Shyp Platform. The app allows users 
 - **Orders Screen**: This screen displays a list of orders. Users can filter the orders by their status - 'All', 'Pending', or 'In Progress'. Users can also navigate to the detailed tracking screen of each order from here.
   ![](https://github.com/sidx8/Shyp-UI/blob/main/Screenshot_1684878787.png)
 - **Tracking Screen**: This screen shows the details of a selected order.
+  ![](https://github.com/sidx8/Shyp-UI/blob/main/Screenshot_1684914166.png)
   ![](https://github.com/sidx8/Shyp-UI/blob/main/Screenshot_1684878460.png)
 
 ## Theme

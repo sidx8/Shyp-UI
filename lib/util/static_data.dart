@@ -113,4 +113,16 @@ final List<Map<String, dynamic>> orders = [
       {'id': 'truck3', 'license': 'GHI-789'},
     ],
   },
+  {
+    'id': '11',
+    'title': 'Order 11',
+    'status': 'inprogress',
+    'pickupLocation': 'Chicago',
+    'dropLocation': 'Houston',
+    'quantityOfLoad': '15 Tonne',
+    'pickupDate': DateTime(2023, 6, 6).toIso8601String(),
+    'trucks': [
+      {'id': 'truck3', 'license': 'GHI-789'},
+    ],
+  },
 ];
